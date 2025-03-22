@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="home.css">
+    <title>Spoti - Rent Your Dream Space</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    
+
+<!-- Navbar -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-home logo-icon text-success"></i>
+            SPOTI
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="rent.html">Rent</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Show </a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+            <div class="btn-group" role="group" aria-label="Basic example" >
+               <a class="btn-group"href="login.html"> <button  type="button" class="btn btn-outline-success">login</button></a>
+               <a class="btn-group"href="signup.html"> <button  type="button" class="btn btn-outline-success">sign up</button></a>
+              </div>
+        </div>
+        </div>
+    </div>
+</nav>
+<!-- search -->
+<div class="hero-section">
+    <div class="container text-center">
+        <div class="search-container" >
+            <h1 id="search-text" class="display-4 mb-4" >Find Your Perfect Space</h1>
+            <p  id="search-text"class="lead mb-4"  >Discover unique places to stay, work, and play</p>
+            <div class="input-group mb-3 w-75 mx-auto">
+                <input type="text" class="form-control" placeholder="Search locations...">
+                <button class="btn btn-success">Search</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+<div class="text">
+    <h2>For profitable rent</h2>
+    <p>
+         Live in Luxury Exceptional Homes with Stunning Designs.
+         <br>
+         Where Elegance Meets Comfort Own a Premium Property <br> Today. Breathtaking Views & Prime Locations  Your Exclusive Home Awaits<a href="#">learn more</a>
+        </p>
+
+</div>
+
+<div id="slide" class="carousel-slide"  >
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img id="img-ad" class=" w-100" src="images/r-architecture-2gDwlIim3Uw-unsplash.jpg" alt="First slide">
+            <div id="text-ad" class="carousel-caption d-none d-md-block">
+                <h1>Show Your Place</h1>
+                <p>Invest in Your Future with Prime preReal Estate <br>Discover Your Perfect Home with Ease</p>
+                <div id="btn-try" class="btn btn-success">try now</div>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
+</div>
+
+<!-- Property Cards -->
+<div  class="container my-5">
+    <div id="container" style="background: #AAB396; margin-left: 200px; margin-bottom: 30px; margin-right: 200px; border-radius: 20px; height: 50px; ">
+    <h2  class="mb-4">Featured Properties</h2>
+</div>
+    <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <a id="card2" href="page2.html"><div class="card">
+                <img src="images/image.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Downtown Penthouse</h5>
+                    <p class="text-muted">New York City</p>
+                    <p class="card-text">$350/night • 4 guests • 2 beds</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="rating">
+                            <i class="fas fa-star text-warning"></i> 4.9
+                        </div>
+                        <button class="btn btn-success">Book Now</button>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+       <div class="col-md-4">
+        <a id="card2" href="page.html"> <div class="card" >
+                <img src="images/pexels-timmossholder-974314.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Agricultural land</h5>
+                    <p class="text-muted">kafr el-sheikh</p>
+                    <p class="card-text">$650/month • 2 acres</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="rating">
+                            <i class="fas fa-star text-warning"></i> 4.8
+                        </div>
+                        <button class="btn btn-sm btn-success">Book Now</button>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <a id="card2" href="page.html"> <div class="card">
+                <img src="images/zac-gudakov-wwqZ8CM21gg-unsplash.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Mountain Cabin</h5>
+                    <p class="text-muted">Colorado</p>
+                    <p class="card-text">$250/night • 2 guests • 1 bed</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="rating">
+                            <i class="fas fa-star text-warning"></i> 4.7
+                        </div>
+                        <button class="btn btn-sm btn-success">Book Now</button>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-4">
+            <a id="card2" href="page.html"><div class="card">
+                <img src="images/wallpaperflare.com_wallpaper.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">City Loft</h5>
+                    <p class="text-muted">San Francisco</p>
+                    <p class="card-text">$300/night • 3 guests • 2 beds</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="rating">
+                            <i class="fas fa-star text-warning"></i> 4.9
+                        </div>
+                        <button class="btn btn-sm btn-success">Book Now</button>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4">
+            <a id="card2" href="page.html"> <div class="card">
+                <img src="images/scott-webb-1ddol8rgUH8-unsplash.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Lake House</h5>
+                    <p class="text-muted">Lake Tahoe</p>
+                    <p class="card-text">$400/night • 8 guests • 4 beds</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="rating">
+                            <i class="fas fa-star text-warning"></i> 4.6
+                        </div>
+                        <button class="btn btn-sm btn-success">Book Now</button>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4">
+            <a id="card2" href="page.html"><div class="card">
+                <img src="images/r-architecture-TRCJ-87Yoh0-unsplash.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Desert Oasis</h5>
+                    <p class="text-muted">Arizona</p>
+                    <p class="card-text">$280/night • 4 guests • 2 beds</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="rating">
+                            <i class="fas fa-star text-warning"></i> 4.5
+                        </div>
+                        <button class="btn btn-sm btn-success">Book Now</button>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+    </div>
+</div>
+        
+    </div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h4>SPOTI</h4>
+                <p>Making space rental simple and reliable since 2023</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5>Connect With Us</h5>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4 pt-4 border-top">
+            <p>© 2023 Spoti. All rights reserved. <a href="#" class="text-white">Privacy Policy</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #fbf0b0;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 1000px;
+    height: 530px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-side {
+    flex:1;
+    background-image: url(images/wallpaperflare.com_wallpaper\ \(4\).jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.overlay a{
+    background-color: #1f6904;
+    color: #1f6904;
+    width: 10%;
+    border-radius: 10px;
+   margin-bottom: 360px;
+   
+
+}
+.overlay button:hover ,.overlay a:hover{
+    background-color: #2f7316;
+    cursor:pointer;
+    transition: ease-in-out .1s;
+}
+
+.overlay i{
+    
+    font-size: 20px;
+    color: #fbf0b0;
+}
+.overlay button{
+    background-color: #1f6904;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.386), rgba(0, 0, 0, 0.285));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+    color: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.form-side {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    height: 106%;
+}
+
+.form-container {
+    width: 10   0%;
+    max-width: 380px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: #1a1a1a;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 32px;
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #1f6904;
+    outline: none;
+}
+
+.options-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 8px;
+}
+
+.forgot-password {
+    color: #1f6904;
+    text-decoration: none;
+}
+
+.primary-button {
+    width: 100%;
+    padding: 12px;
+    background-color:#1f6904;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.primary-button:hover {
+    background-color: #1f6904;
+}
+
+.switch-form {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+}
+
+.switch-form a {
+    color:#1f6904;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.name-row {
+    display: flex;
+    gap: 16px;
+}
+
+.name-row .input-group {
+    flex: 1;
+}
+
+.terms-checkbox {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    font-size: 13px;
+}
+
+.terms-checkbox input {
+    margin-right: 8px;
+    margin-top: 3px;
+}
+
+.terms-checkbox a {
+    color: #1f6904;
+    text-decoration: none;
+}
+
+/* Responsive CSS for RealSpace Login/Signup Pages */
+/* This file adds responsive behavior without modifying the original CSS */
+
+/* Large screens (between 768px and 1000px) */
+@media (max-width: 1000px) and (min-width: 769px) {
+    .container {
+      width: 90%;
+      max-width: 900px;
+    }
+  
+    .form-container {
+      max-width: 340px;
+    }
+  }
+  
+  /* Medium screens refinements */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      min-height: 600px;
+      border-radius: 12px;
+      box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .image-side {
+      height: 40%; /* Image takes 40% of the container height */
+      min-height: 200px;
+    }
+  
+    .form-side {
+      height: 60%; /* Form takes 60% of the container height */
+      padding: 24px;
+      overflow-y: auto;
+    }
+  
+    .overlay {
+      padding: 20px;
+    }
+  
+    .overlay a {
+      margin-bottom: 80px;
+    }
+  
+    .form-container {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    /* Ensure the form is scrollable if needed */
+    body {
+      height: auto;
+      min-height: 100vh;
+    }
+  }
+  
+  /* Small screens (mobile) */
+  @media (max-width: 480px) {
+    .container {
+      border-radius: 0;
+      width: 100%;
+      height: 100vh;
+    }
+  
+    .image-side {
+      height: 40%; /* Maintain 40% height ratio */
+    }
+  
+    .form-side {
+      height: 60%; /* Maintain 60% height ratio */
+    }
+  
+    .overlay {
+      padding: 15px;
+    }
+  
+    .overlay a {
+      margin-bottom: 60px;
+    }
+  
+    .logo {
+      font-size: 24px;
+    }
+  
+    .tagline {
+      font-size: 14px;
+    }
+  
+    .form-side {
+      padding: 20px 15px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    .subtitle {
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
+  
+    .input-group {
+      margin-bottom: 16px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 10px 14px;
+    }
+  
+    .primary-button {
+      padding: 10px;
+    }
+  
+    .terms-checkbox {
+      font-size: 12px;
+    }
+  }
+  
+  /* Extra small screens */
+  @media (max-width: 320px) {
+    .overlay a {
+      margin-bottom: 40px;
+    }
+  
+    .logo {
+      font-size: 20px;
+    }
+  
+    .tagline {
+      font-size: 12px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    .subtitle {
+      font-size: 12px;
+    }
+  
+    label {
+      font-size: 13px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 8px 12px;
+      font-size: 13px;
+    }
+  
+    .options-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .forgot-password {
+      margin-left: 0;
+    }
+  }
+  
+  /* Fix for the back button positioning */
+  @media (max-width: 768px) {
+    .overlay a {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      margin-bottom: 0;
+    }
+  }
+  
+  /* Landscape mode on mobile */
+  @media (max-height: 500px) and (max-width: 768px) {
+    .container {
+      flex-direction: row;
+      height: 100vh;
+    }
+  
+    .image-side {
+      width: 40%;
+      height: 100%;
+    }
+  
+    .form-side {
+      width: 60%;
+    }
+  
+    .overlay a {
+      margin-bottom: 0;
+      top: 15px;
+      left: 15px;
+      position: absolute;
+    }
+  }
+  
+  /* Ensure form is scrollable on very small screens */
+  @media (max-height: 600px) {
+    .form-side {
+      overflow-y: auto;
+    }
+  
+    body {
+      align-items: flex-start;
+      padding: 20px 0;
+    }
+  }
+  
+  /* Fix for the form width on signup page */
+  #signup-form {
+    width: 100%;
+  }
+  
+  /* Ensure inputs don't overflow on small screens */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
